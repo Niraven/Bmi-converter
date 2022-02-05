@@ -1,0 +1,41 @@
+#input from the user
+height = float(input("Enter your height in meters: "))
+weight = float(input("Enter your weight in kg: "))
+
+#formula
+# def get_bmi(weight, height):
+BMI = weight / (height**2)
+# def display_category(bmi)
+print(f"Your BMI is {BMI}")
+
+
+#conditions for classification
+
+if BMI <= 16.4:
+    print("You are severely underweight.")
+
+elif BMI >= 16.5 and BMI <= 18.4:
+    print("You are underweight.")
+elif BMI >= 18.5 and BMI <= 24.9:
+    print(" You are normal.")
+elif BMI >= 25 and BMI <= 30:
+    print("You are overweight.")
+elif BMI >= 30.1 and BMI <= 34.9:
+    print("You are obese class I.")
+elif BMI >= 35 and BMI <= 40:
+    print("You are obese class II.")
+elif BMI > 40:
+    print("You are obese class III")
+
+# #Test Loop
+# while True
+#     Choice
+
+##2. Words in Alphabetic Order
+my_str = input("Enter a string: ")
+words = my_str.split()
+
+words.sort()
+# display the sorted words
+for word in words:
+   print(word)
